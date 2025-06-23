@@ -1,0 +1,21 @@
+{
+  "name": "parcial-02-mie18",
+  "version": "1.0.0",
+  "description": "Parcial 2 - 3K2 - DDS Miércoles 18",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "philip",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7",
+    "sql-formatter": "^15.6.1"
+  }
+}

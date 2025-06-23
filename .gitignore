@@ -1,0 +1,28 @@
+# 🧠 General
+.DS_Store
+*.log
+*.env
+
+# 🧪 Tests temporales y REST Client
+*.rest
+
+# 🐢 Node.js (backend)
+parcial-2-simulacro/p2-sim-pre/api/node_modules/
+parcial-2-simulacro/p2-sim-pre/api/.env
+parcial-2-simulacro/p2-sim-pre/api/.cache/
+parcial-2-simulacro/p2-sim-pre/api/dist/
+parcial-2-simulacro/p2-sim-pre/api/coverage/
+
+# ⚛ React (frontend)
+parcial-2-simulacro/p2-sim-pre/frontend/node_modules/
+parcial-2-simulacro/p2-sim-pre/frontend/.env
+parcial-2-simulacro/p2-sim-pre/frontend/dist/
+parcial-2-simulacro/p2-sim-pre/frontend/.vite/
+
+# 💥 Vite cache
+.vite/
+
+# 🚀 Build y deployment
+build/
+*.sqlite
+*.sqlite3

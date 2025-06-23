@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 250px;
+    position: relative;
+}
+header nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+header .nav-pills .nav-link {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+header .nav-pills .nav-link.active {
+    background-color: white;
+    color: #0d6efd;
+}
+.usuario-pill {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #0d6efd;
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.landing-icon {
+    font-size: 3rem;
+    color: #0d6efd;
+}
+.landing-button {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+}
