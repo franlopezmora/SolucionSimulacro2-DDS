@@ -76,6 +76,22 @@ const FormularioJuego = () => {
           <label>URL Sitio Web:</label>
           <input {...register("urlWeb")} className="form-control" />
         </div>
+        <div className="mb-3">
+          <label className="form-label">Clasificación ESRB</label>
+          <select
+            className="form-select"
+            {...register("codigoEsrb", { required: true })}
+          >
+            <option value="">Seleccionar clasificación</option>
+            <option value="E">E (Everyone)</option>
+            <option value="E10">E10 (Everyone 10+)</option>
+            <option value="T">T (Teen)</option>
+            <option value="M">M (Mature)</option>
+            <option value="AO">AO (Adults Only)</option>
+            <option value="RP">RP (Rating Pending)</option>
+            <option value="UR">UR (Unrated)</option>
+          </select>
+        </div>
         <div className="col-12">
           <button type="submit" className="btn btn-success">Guardar</button>
         </div>

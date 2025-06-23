@@ -40,6 +40,13 @@ const buscarFiltrado = async (filtros) => {
   return response.data;
 };
 
+const contarFiltrado = async (filtros) => {
+  const params = new URLSearchParams(filtros).toString();
+  const response = await axios.get(`/juegos/filtrar/contar?${params}`);
+  return response.data;
+};
+
+
 export default {
   obtenerTodos,
   obtenerPorId,
@@ -48,5 +55,6 @@ export default {
   eliminar,
   getUltimosEstrenos,
   getMasPopulares,
-  buscarFiltrado
+  buscarFiltrado,
+  contarFiltrado
 };
